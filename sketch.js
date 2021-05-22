@@ -72,7 +72,7 @@ function setup() {
 }
 
 function draw() {
-  trex.debug = true;
+  //trex.debug = true;
   background(backgroundimg);
   text("Score: "+ score, 500,50);
   
@@ -149,7 +149,7 @@ function spawnClouds() {
 function spawnObstacles() {
   if(frameCount % 60 === 0) {
     var obstacle = createSprite(600,165,10,40);
-    obstacle.debug = true;
+    //obstacle.debug = true;
     obstacle.velocityX = -(6 + 3*score/100);
     
     //generate random obstacles
